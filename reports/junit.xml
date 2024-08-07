@@ -1,69 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="29" failures="0" errors="0" time="17.961">
-  <testsuite name="POC test" errors="0" failures="0" skipped="0" timestamp="2024-08-06T08:34:54" time="6.03" tests="6">
-    <testcase classname="POC test GET requests GET / posts" name="POC test GET requests GET / posts" time="0.293">
+<testsuites name="jest tests" tests="23" failures="0" errors="0" time="15.947">
+  <testsuite name="Upload Files" errors="0" failures="0" skipped="1" timestamp="2024-08-07T10:56:40" time="4.074" tests="2">
+    <testcase classname="Upload Files Upload files POST /upload/single " name="Upload Files Upload files POST /upload/single " time="0">
+      <skipped/>
     </testcase>
-    <testcase classname="POC test GET requests GET / comments with query params" name="POC test GET requests GET / comments with query params" time="0.204">
-    </testcase>
-    <testcase classname="POC test GET requests POST requests POST / posts " name="POC test GET requests POST requests POST / posts " time="0.487">
-    </testcase>
-    <testcase classname="POC test GET requests PUT requests PUT / posts " name="POC test GET requests PUT requests PUT / posts " time="0.363">
-    </testcase>
-    <testcase classname="POC test GET requests PATCH requests PATCH / posts " name="POC test GET requests PATCH requests PATCH / posts " time="0.705">
-    </testcase>
-    <testcase classname="POC test GET requests DELETE requests DELETE / posts/:id" name="POC test GET requests DELETE requests DELETE / posts/:id" time="0.332">
+    <testcase classname="Upload Files Upload files POST /upload/multiple " name="Upload Files Upload files POST /upload/multiple " time="2.119">
     </testcase>
   </testsuite>
-  <testsuite name="Upload Files" errors="0" failures="0" skipped="0" timestamp="2024-08-06T08:34:54" time="7.937" tests="2">
-    <testcase classname="Upload Files Upload files POST /upload/single " name="Upload Files Upload files POST /upload/single " time="1.851">
+  <testsuite name="Categories" errors="0" failures="0" skipped="0" timestamp="2024-08-07T10:56:40" time="13.619" tests="8">
+    <testcase classname="Categories Categories brands GET /categories " name="Categories Categories brands GET /categories " time="2.868">
     </testcase>
-    <testcase classname="Upload Files Upload files POST /upload/multiple " name="Upload Files Upload files POST /upload/multiple " time="2.439">
+    <testcase classname="Categories Create categories POST /categories" name="Categories Create categories POST /categories" time="1.547">
     </testcase>
-  </testsuite>
-  <testsuite name="Categories" errors="0" failures="0" skipped="0" timestamp="2024-08-06T08:34:54" time="14.503" tests="8">
-    <testcase classname="Categories Categories brands GET /categories " name="Categories Categories brands GET /categories " time="1.444">
+    <testcase classname="Categories Update categories PUT /categories/:id" name="Categories Update categories PUT /categories/:id" time="0.676">
     </testcase>
-    <testcase classname="Categories Create categories POST /categories" name="Categories Create categories POST /categories" time="0.739">
+    <testcase classname="Categories Update categories Business logic - Throw error when updating invalid category" name="Categories Update categories Business logic - Throw error when updating invalid category" time="0.606">
     </testcase>
-    <testcase classname="Categories Update categories PUT /categories/:id" name="Categories Update categories PUT /categories/:id" time="0.701">
+    <testcase classname="Categories Update categories Schema verification - Category name must be a string" name="Categories Update categories Schema verification - Category name must be a string" time="0.585">
     </testcase>
-    <testcase classname="Categories Update categories Business logic - Throw error when updating invalid category" name="Categories Update categories Business logic - Throw error when updating invalid category" time="0.587">
+    <testcase classname="Categories Update categories Schema verification - Name is mandatory" name="Categories Update categories Schema verification - Name is mandatory" time="0.57">
     </testcase>
-    <testcase classname="Categories Update categories Schema verification - Category name must be a string" name="Categories Update categories Schema verification - Category name must be a string" time="0.603">
+    <testcase classname="Categories Delete categories Delete /categories/:id" name="Categories Delete categories Delete /categories/:id" time="1.403">
     </testcase>
-    <testcase classname="Categories Update categories Schema verification - Name is mandatory" name="Categories Update categories Schema verification - Name is mandatory" time="0.617">
-    </testcase>
-    <testcase classname="Categories Delete categories Delete /categories/:id" name="Categories Delete categories Delete /categories/:id" time="1.974">
-    </testcase>
-    <testcase classname="Categories Delete categories Business logic - Throw error when deleting invalid category" name="Categories Delete categories Business logic - Throw error when deleting invalid category" time="0.587">
+    <testcase classname="Categories Delete categories Business logic - Throw error when deleting invalid category" name="Categories Delete categories Business logic - Throw error when deleting invalid category" time="0.581">
     </testcase>
   </testsuite>
-  <testsuite name="Brands" errors="0" failures="0" skipped="0" timestamp="2024-08-06T08:34:54" time="17.458" tests="13">
-    <testcase classname="Brands Fetch brands GET /brands " name="Brands Fetch brands GET /brands " time="1.846">
+  <testsuite name="Brands" errors="0" failures="0" skipped="0" timestamp="2024-08-07T10:56:40" time="15.563" tests="13">
+    <testcase classname="Brands Fetch brands GET /brands " name="Brands Fetch brands GET /brands " time="1.826">
     </testcase>
-    <testcase classname="Brands Fetch Individual brand GET /brand/:_id" name="Brands Fetch Individual brand GET /brand/:_id" time="0.574">
+    <testcase classname="Brands Fetch Individual brand GET /brand/:_id" name="Brands Fetch Individual brand GET /brand/:_id" time="0.608">
     </testcase>
-    <testcase classname="Brands Fetch Individual brand Business logic - GET /brand/:invalid_id should throw 404" name="Brands Fetch Individual brand Business logic - GET /brand/:invalid_id should throw 404" time="1.161">
+    <testcase classname="Brands Fetch Individual brand Business logic - GET /brand/:invalid_id should throw 404" name="Brands Fetch Individual brand Business logic - GET /brand/:invalid_id should throw 404" time="0.634">
     </testcase>
     <testcase classname="Brands Create brands POST /brands" name="Brands Create brands POST /brands" time="0.002">
     </testcase>
-    <testcase classname="Brands Create brands Schema verification - Name is mandatory" name="Brands Create brands Schema verification - Name is mandatory" time="0.521">
+    <testcase classname="Brands Create brands Schema verification - Name is mandatory" name="Brands Create brands Schema verification - Name is mandatory" time="0.499">
     </testcase>
-    <testcase classname="Brands Create brands Schema verification - Min char length for name &gt; 1" name="Brands Create brands Schema verification - Min char length for name &gt; 1" time="0.501">
+    <testcase classname="Brands Create brands Schema verification - Min char length for name &gt; 1" name="Brands Create brands Schema verification - Min char length for name &gt; 1" time="0.49">
     </testcase>
-    <testcase classname="Brands Create brands Business logic - Duplicate brand entities not allowed" name="Brands Create brands Business logic - Duplicate brand entities not allowed" time="0.584">
+    <testcase classname="Brands Create brands Business logic - Duplicate brand entities not allowed" name="Brands Create brands Business logic - Duplicate brand entities not allowed" time="0.644">
     </testcase>
-    <testcase classname="Brands Update brands PUT /brands:id" name="Brands Update brands PUT /brands:id" time="0.687">
+    <testcase classname="Brands Update brands PUT /brands:id" name="Brands Update brands PUT /brands:id" time="0.666">
     </testcase>
-    <testcase classname="Brands Update brands Schema verification - Brand name char &gt; 30 not allowed" name="Brands Update brands Schema verification - Brand name char &gt; 30 not allowed" time="0.485">
+    <testcase classname="Brands Update brands Schema verification - Brand name char &gt; 30 not allowed" name="Brands Update brands Schema verification - Brand name char &gt; 30 not allowed" time="1.363">
     </testcase>
-    <testcase classname="Brands Update brands Schema verification - Brand description must be a string" name="Brands Update brands Schema verification - Brand description must be a string" time="0.493">
+    <testcase classname="Brands Update brands Schema verification - Brand description must be a string" name="Brands Update brands Schema verification - Brand description must be a string" time="0.481">
     </testcase>
-    <testcase classname="Brands Update brands Business logic - Throw error when updating invalid brand" name="Brands Update brands Business logic - Throw error when updating invalid brand" time="0.59">
+    <testcase classname="Brands Update brands Business logic - Throw error when updating invalid brand" name="Brands Update brands Business logic - Throw error when updating invalid brand" time="0.574">
     </testcase>
-    <testcase classname="Brands Delete brands DELETE /brands/:id" name="Brands Delete brands DELETE /brands/:id" time="0.679">
+    <testcase classname="Brands Delete brands DELETE /brands/:id" name="Brands Delete brands DELETE /brands/:id" time="0.693">
     </testcase>
-    <testcase classname="Brands Delete brands Business logic - Throw error when deleting invalid brand" name="Brands Delete brands Business logic - Throw error when deleting invalid brand" time="0.588">
+    <testcase classname="Brands Delete brands Business logic - Throw error when deleting invalid brand" name="Brands Delete brands Business logic - Throw error when deleting invalid brand" time="0.594">
     </testcase>
   </testsuite>
 </testsuites>
